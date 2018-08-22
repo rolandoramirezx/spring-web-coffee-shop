@@ -2,21 +2,25 @@ package com.rolandoramirezx.springwebcoffeeshop;
 
 public class Coffee {
 
-    private final long id;
-    private final String content;
+    long id;
+    String description;
 
-    public Coffee(long id, String content){
+    public void setId(long id){
         this.id = id;
-        this.content = content;
     }
 
+    public void setDescription(String description){
+        this.description = description;
+    }
     public long getId() {
         return id;
     }
 
-    public String getContent() {
-        return content;
+    public String getDescription(){
+        return description;
     }
+
+
 }
 
 
